@@ -8,8 +8,6 @@ pub struct OrderPayload {
     pub temp: u8,
 }
 
-pub mod env;
-
 
 #[derive(Serialize, Deserialize, Clone)]
 pub struct OrderInfo {
