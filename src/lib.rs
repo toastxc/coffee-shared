@@ -10,7 +10,6 @@ pub enum OrderPayload {
 pub struct OrderInfo {
     pub order_name: String,
     pub coffee_info: OrderPayload,
-    pub date: SystemTime,
 }
 
 pub const COFFEE_TYPE: [&str; 8] = ["Espresso", "Latte", "Flat White", "Cappuccino", "Mocha", "Americano", "Breve", "Con Panna"];
