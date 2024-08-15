@@ -1,14 +1,14 @@
 use serde::{Deserialize, Serialize};
 use std::time::SystemTime;
 
-#[derive(Serialize, Deserialize, Clone)]
+#[derive(Serialize, Deserialize, Clone, Debug)]
 pub enum OrderPayload {
     Standard { coffee: usize, milk: usize, temp: usize, sugar: usize },
     Beth(String),
 }
-#[derive(Serialize, Deserialize, Clone)]
+#[derive(Serialize, Deserialize, Clone, Debug)]
 pub struct OrderInfo {
-    pub order_no: String,
+    pub order_name: String,
     pub coffee_info: OrderPayload,
     pub date: SystemTime,
 }
